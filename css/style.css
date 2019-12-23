@@ -150,15 +150,13 @@ a {
 
 .top-form__input {
 	display: block;
-	margin: 0 auto;
+	margin: 32px auto 0;
+	padding: 10px 0 10px 13px;
 	width: 285px;
 	border-top: none;
 	border-right: none;
 	border-left: none;
 	border-bottom: 1px solid #d6d6d6;
-	padding-left: 13px;
-	padding-bottom: 10px;
-	padding-top: 42px;
 }
 
 .top-form__button {
