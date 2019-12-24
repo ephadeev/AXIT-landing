@@ -24,6 +24,15 @@ a {
 	text-transform: uppercase;
 }
 
+.titles:after {
+	content: "";
+	display: block;
+	width: 64px;
+	height: 2px;
+	background-color: #ff8b38;
+	margin: 20px auto 0;
+}
+
 .titles--white {
 	font-size: 36px;
 	font-family: "Raleway", sans-serif;
@@ -31,6 +40,33 @@ a {
 	line-height: 1.2;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.titles--white:after {
+	content: "";
+	display: block;
+	width: 64px;
+	height: 2px;
+	background-color: #ffffff;
+	margin: 20px auto 0;
+}
+
+.texts {
+	font-size: 14px;
+	font-family: "OpenSans", sans-serif;
+	color: rgb(134, 135, 139);
+	line-height: 1.429;
+	margin: 0;
+	text-align: center;
+}
+
+.texts--white {
+	font-size: 14px;
+	font-family: "OpenSans", sans-serif;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.429;
+	margin: 0;
+	text-align: center;
 }
 
 /* Header */
@@ -231,6 +267,20 @@ a {
 }
 
 /* About */
+.about__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about__title {
+	text-align: center;
+}
+
+.about__text {
+	text-align: center;
+}
+
 
 /* Prices */
 .prices {
