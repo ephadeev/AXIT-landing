@@ -224,12 +224,10 @@ a {
 .top-form__input {
 	display: block;
 	margin: 32px auto 0;
-	padding: 10px 0 10px 13px;
+	padding: 10px 10px 13px;
 	width: 285px;
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	border-bottom: 1px solid #d6d6d6;
+	border: 1px solid transparent;
+	border-bottom-color: #d6d6d6;
 }
 
 .top-form__button {
@@ -248,6 +246,7 @@ a {
 
 .top-form__button:hover {
 	background-color: #000;
+	cursor: pointer;
 }
 
 /* Social */
@@ -318,11 +317,11 @@ a {
 	text-align: center;
 }
 
-
 /* Prices */
 .prices {
 	background-color: #f5f5f5;
 }
+
 /* Reviews */
 
 /* Design */
