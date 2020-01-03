@@ -398,15 +398,20 @@ a {
 }
 
 /* Contacts */
-.contacts {				/* height: 615px; */
+.contacts {				/* height: 613px; */
 
 }
 
 /* Footer */
-.footer {								/* height: 100px */
-	padding-top: 38px;		/* точно замерено. todo: padding->margin и сделать чтобы фоновый цвет забегал под границу */
+.footer {					/* height: 100px */
+	padding-top: 38px;
 	background-color: #000;
 	text-align: center;
+}
+
+.footer__links {
+	margin-bottom: 15px;
+	height: 23px;
 }
 
 .footer__link {
@@ -415,7 +420,11 @@ a {
 	background-repeat: no-repeat;
 	height: 23px;
 	width: 27px;
-	padding-right: 30px;
+	margin-right: 30px;
+}
+
+.footer__link:last-child {
+	margin-right: 0;
 }
 
 .facebook {
@@ -453,10 +462,8 @@ a {
 }
 
 .footer__copyright {
-	font-size: 12px;
+	font-size: 9px;
 	font-family: "OpenSans", sans-serif;
 	color: rgba(255, 255, 255, 0.5);
-	line-height: 1.2;
-	margin: 15px 0 0;				/* todo: лучше ссылки чтобы оттылкивали корпоратс, чем так */
-	padding-bottom: 15px;			/* точно замерено 15px между ссылками и короратс и 15px от корпоратс до низа лендинга */
+	padding-bottom: 15px;
 }
