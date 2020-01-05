@@ -74,9 +74,9 @@ a {
 	font-size: 36px;
 	font-family: "Raleway", sans-serif;
 	color: rgb(255, 255, 255);
-	line-height: 1.2;
 	text-align: center;
 	text-transform: uppercase;
+	padding-top: 75px;
 }
 
 .titles--white:after {
@@ -85,7 +85,7 @@ a {
 	width: 64px;
 	height: 2px;
 	background-color: #ffffff;
-	margin: 20px auto 0;
+	margin: 20px auto 33px;
 }
 
 .texts {
@@ -98,11 +98,10 @@ a {
 }
 
 .texts--white {
-	font-size: 14px;
-	font-family: "OpenSans", sans-serif;
+	font-size: 16px;
+	font-family: "Raleway", sans-serif;
 	color: rgba(255, 255, 255, 0.8);
-	line-height: 1.429;
-	margin: 0;
+	margin-bottom: 33px;
 	text-align: center;
 }
 
@@ -149,7 +148,9 @@ a {
 .banner {
 	background-color: black;
 	background-image: url("../img/top-bg.png");
+	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .banner__container {
@@ -392,9 +393,18 @@ a {
 
 /* Reviews */
 
-/* Design */
+/* Design */			/* height: 320px; */
 .design {
 	background-color: black;
+	background-image: url("../img/design__image.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.design__button {
+	margin-bottom: 63px;
 }
 
 /* Contacts */
