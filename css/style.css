@@ -53,10 +53,10 @@ a {
 }
 
 .titles {
+	padding-top: 108px;
 	font-size: 36px;
 	font-family: "Raleway", sans-serif;
 	color: rgb(33, 33, 33);
-	line-height: 1.194;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -67,7 +67,7 @@ a {
 	width: 64px;
 	height: 2px;
 	background-color: #ff8b38;
-	margin: 20px auto 0;
+	margin: 20px auto 33px;
 }
 
 .titles--white {
@@ -380,7 +380,7 @@ a {
 	text-align: center;
 }
 
-/* Prices */
+/* Prices w: 343 */
 .prices {
 	background-color: #f5f5f5;
 }
@@ -389,6 +389,74 @@ a {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
+	margin-top: 80px;
+}
+
+.prices__item {
+	width: 343px;
+}
+
+.prices__name {
+	background-color: #333;
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-align: center;
+	padding: 22px;
+	margin-bottom: 1px;
+}
+
+.prices__value {				/* todo: numbers should be larger */
+	background-color: #333;
+	font-size: 35px;
+	font-family: "Raleway", sans-serif;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-align: center;
+	padding: 32px;
+	margin-bottom: 1px;
+}
+
+.prices__type {
+	background-color: #333;
+	font-size: 14px;
+	font-family: "OpenSans", sans-serif;
+	color: rgba(255, 255, 255, 0.502);
+	text-align: center;
+	padding: 18px;
+	font-style: italic;
+}
+
+.prices__line {
+	height: 5px;
+	background-color: #ff8b38;
+	margin-bottom: 1px;
+}
+
+.prices__hot {
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-align: center;
+	background-color: #ff8b38;
+	padding: 13px;
+}
+
+.prices_advantage {
+	font-size: 14px;
+	font-family: "OpenSans", sans-serif;
+	color: rgb(134, 135, 139);
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #fff;
+	padding: 15px;
+	margin-bottom: 1px;
+}
+
+.prices_advantage:last-child {
+	margin-bottom: 96px;
 }
 
 /* Reviews */
