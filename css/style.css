@@ -645,9 +645,14 @@ a {
 	background-color: #ff9b51;
 	font-size: 14px;
 	font-family: "OpenSans", sans-serif;
+    cursor: pointer;
 
 	border: 2px solid rgba(0, 0, 0, 0);
 	border-radius: 3px;
+}
+
+.contacts__form--button:hover {
+    background-color: #333;
 }
 
 /* Footer */
