@@ -43,7 +43,6 @@ table {
 }
 
 a {
-	color: #fff;
 	text-decoration: none;
 }
 
@@ -128,20 +127,22 @@ a {
 .menu__item {
 	display: inline-block;
 	margin-right: 45px;
-
-	font-size: 14px;
-	font-family: "OpenSans", sans-serif;
-	color: rgba(255, 255, 255, 0.69);
-	line-height: 1.2;
 }
 
 .menu__item:last-child {
 	margin-right: 0;
 }
 
-.menu__item:hover {
+.header__link {
+	color: rgba(255, 255, 255, .69);
+	font-size: 14px;
+	font-family: "OpenSans", sans-serif;
+	line-height: 1.2;
+}
+
+
+.header__link:hover {
 	color: rgba(255, 255, 255, 1);
-	font-weight: 700;
 }
 
 /* Banner */
@@ -168,7 +169,7 @@ a {
 	margin-bottom: 30px;
 }
 
-.description_title {
+.description__title {
 	color: #fff;
 	font-size: 36px;
 	line-height: 1.2;
@@ -176,11 +177,21 @@ a {
 	font-family: "Raleway", sans-serif;
 }
 
-.description_text {
+.description__title:after {
+	content: "";
+	display: block;
+	width: 64px;
+	height: 2px;
+	background-color: #fff;
+	margin: 40px 0;
+}
+
+.description__text {
 	font-size: 16px;
-	font-family: "Myriad Pro", sans-serif;
+	font-family: "Raleway", sans-serif;
 	color: rgba(255, 255, 255, 0.8);
 	line-height: 1.438;
+	margin-bottom: 45px;
 }
 
 /* Download button */
