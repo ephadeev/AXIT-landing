@@ -286,7 +286,7 @@ a {
 	color: rgb(51, 51, 51);
 	font-weight: 700;
 	line-height: 1.2;
-	margin: 23px 0 14px;
+	margin: 20px 0 1px;
 }
 
 .social__text {
@@ -295,27 +295,60 @@ a {
 	color: rgb(134, 135, 139);
 	line-height: 1.429;
 	max-width: 365px;
-	margin: 0;
+	margin-bottom: 20px;
 }
 
 .social__links {
-	margin: 31.5px 0;
-}
-
-.fas, .fab {
-	color: #ccc;
-	font-size: 42px;
+	margin: 29px 0 30px;
+    height: 46px;
 }
 
 .social__link {
-	padding-right: 60px;
+    display: inline-block;
+    height: 46px;
+    width: 24px;
+    background-image: url("../img/social__icons.png");
+    background-repeat: no-repeat;
+	margin-right: 30px;
+}
+
+.social__facebook {
+    width: 24px;
+}
+
+.social__twitter {
+    background-position: -87px top;
+    width: 43px;
+}
+
+.social__google {
+    background-position: -191px top;
+    width: 43px;
+}
+
+.social__pinterest {
+    background-position: -282px top;
+    width: 42px;
+}
+
+.social__instagram {
+    background-position: -384px top;
+    width: 41px;
+}
+
+.social__stumbleupon {
+    background-position: -485px top;
+    width: 51px;
+}
+
+.social__rss {
+    background-position: -596px top;
+    width: 38px;
 }
 
 .social__link:last-child {
 	padding-right: 0;
 }
-
-
 
 /* Features */
 .features {			/* height: 595px */		/* todo: shadow top */
@@ -649,10 +682,12 @@ a {
 
 	border: 2px solid rgba(0, 0, 0, 0);
 	border-radius: 3px;
+    box-shadow: 0 2px 2px #777;
 }
 
 .contacts__form--button:hover {
-    background-color: #333;
+    background-color: #FFA764;
+    box-shadow: none;
 }
 
 /* Footer */
