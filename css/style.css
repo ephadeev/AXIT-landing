@@ -70,21 +70,12 @@ a {
 }
 
 .titles--white {
-	font-size: 36px;
-	font-family: "Raleway", sans-serif;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	text-transform: uppercase;
 	padding-top: 75px;
+	color: #ffffff;
 }
 
 .titles--white:after {
-	content: "";
-	display: block;
-	width: 64px;
-	height: 2px;
 	background-color: #ffffff;
-	margin: 20px auto 33px;
 }
 
 .texts {
@@ -195,20 +186,26 @@ a {
 }
 
 /* Download button */
-.description__button {
-	font-size: 15px;
-	font-family: "OpenSans", sans-serif;
-	color: #fff;
-	line-height: 1.2;
-	display: inline-block;
+.button--download {
+	display: flex;
 	border: 2px solid #fff;
-	padding: 10px 25px;
-	font-weight: 600;
+	cursor: pointer;
+	color: #fff;
+	width: 131px;
+	height: 38px;
 }
 
-.description__button:hover {
+.button--download:hover {
 	background-color: #fff;
 	color: #000;
+}
+
+.link--download {
+	font-size: 15px;
+	font-family: "OpenSans", sans-serif;
+	font-weight: 600;
+	color: inherit;
+	margin: auto;
 }
 
 /* Top Form */
@@ -435,28 +432,19 @@ a {
     margin-top: 83px;
 }
 
-.test {         /* todo: переименовать! */
+.about__icon--container {         /* todo: переименовать! */
+	display: flex;
     height: 66px;
     width: 66px;
     border: 2px solid #ff8b38;
     border-radius: calc(66px / 2);
     margin: 0 auto 30px;
-    position: relative;
-    text-align: center;
-}
-
-.test::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
 }
 
 .about__icon {
     font-size: 35px;
     color: #ff8b38;
-    margin: 0 auto;
-    vertical-align: middle;
+	margin: auto;
 }
 
 .about__title {
@@ -632,11 +620,11 @@ a {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	text-align: center;
+	padding-bottom: 63px;
 }
 
 .design__button {
-	margin-bottom: 63px;
+	margin: 0 auto;
 }
 
 /* Contacts */

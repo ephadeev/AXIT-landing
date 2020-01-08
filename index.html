@@ -54,7 +54,9 @@
 						euismod bibendum laoreet. Proin gravida dolor sit amet lacus
 						accumsan et viverra justo commodo.
 					</p>
-					<a href="#" class="description__button">Download</a>					<!-- Download button -->
+					<div class="button--download">
+						<a href="#" class="link--download">Download</a>					<!-- Download button -->
+					</div>
 				</div><!-- .description -->
 
 				<form action="" class="top-form">
@@ -93,8 +95,9 @@
 					<button type="button" class="features__button">TAB 1</button>
 					<button type="button" class="features__button">TAB 2</button>
 					<button type="button" class="features__button">TAB 3</button>
+					<!-- todo: это будут чек боксы, каждый чекбоск помещаем в див, дивом стилизуем кнопку, даем класс и потом в css делаем запись в духе: .classчекбокса ~ .classСодержимого. После каждого чекбокса обязательно сразу давать свое содержимое.-->
 				</div>
-				<div class="features__item">
+				<div class="features__item">			<!-- todo: lastchild и firstchild убераем. а этому диву в котором 3 кнопки даем бородер, бордер радиус, и overflow: hidden -->
 					<h3 class="features__title">Tabs with soft transitioning effect</h3>
 					<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
 						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
@@ -116,8 +119,8 @@
 				<h2 id="about" class="titles">Why this is awesome</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="about__container">
-                    <div class="about__item">
-						<div class="test">
+                    <div class="about__item">					<!-- todo: дать ширину итемам, и justify content будет вроде бы start, а не space-between -->
+						<div class="about__icon--container">
 							<i class="far fa-lightbulb about__icon"></i>
 						</div>
                         <h3 class="about__title">Thoughtful Design</h3>
@@ -126,7 +129,7 @@
                             dolor sit amet lacus accumsan et viverra.</p>
                     </div>
                     <div class="about__item">
-						<div class="test">
+						<div class="about__icon--container">
 							<i class="far fa-keyboard about__icon"></i>
 						</div>
                         <h3 class="about__title">Well Crafted</h3>
@@ -135,7 +138,7 @@
                             dolor sit amet lacus accumsan et viverra.</p>
                     </div>
                     <div class="about__item">
-						<div class="test">
+						<div class="about__icon--container">
 							<i class="fas fa-bolt about__icon"></i>
 						</div>
                         <h3 class="about__title">Easy to Customize</h3>
@@ -156,7 +159,7 @@
 						<div class="prices__name">Basic</div>
 						<div class="prices__value">$<span class="prices__value--big">0</span></div>
 						<div class="prices__type">Free for Life</div>
-						<div class="prices__line"></div>
+						<div class="prices__line"></div>					<!-- todo: сделать через бордёр боттом-->
 						<div class="prices_advantage">1 gb of space</div>
 						<div class="prices_advantage">10 gb of bandwidth</div>
 						<div class="prices_advantage">3 websites</div>
@@ -180,7 +183,7 @@
 						<div class="prices__name">Enterprise</div>
 						<div class="prices__value">$<span class="prices__value--big">70</span></div>
 						<div class="prices__type">Monthly Payment</div>
-						<div class="prices__line"></div>
+						<div class="prices__line"></div> 					<!-- todo: сделать через бордёр боттом-->
 						<div class="prices_advantage">Unlimited space</div>
 						<div class="prices_advantage">unlimited bandwidth</div>
 						<div class="prices_advantage">100 websites</div>
@@ -206,7 +209,7 @@
 							quo suscipit.
 						</div>
 						<div class="triangle-container">
-							<div class="triangle-down"></div>
+							<div class="triangle-down"></div>		<!-- todo: сделать бефор элментом спозиционировать абсолютно, текстовому полю к которому треугольник относится дать дисплей релатив, и треугольник тогда через left и bottom подвинуться на сколько надо -->
 						</div>
 						<div class="reviews__authors">
 							<img src="img/reviews__avatar.png" alt="author's face" class="reviews__image" />
@@ -260,11 +263,13 @@
 
 		<section class="design">																	<!-- design -->
 			<div class="container">
-				<h2 class="titles--white">Stylish axure design</h2>
+				<h2 class="titles titles--white">Stylish axure design</h2>
                 <p class="texts--white">
 					Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
 				</p>
-				<a href="#" class="description__button design__button">Download</a>				<!-- Download button -->
+				<div class="button--download design__button">
+					<a href="#" class="link--download">Download</a>							<!-- Download button -->
+				</div>
 			</div>
 		</section>
 
