@@ -90,14 +90,15 @@
 		</section>
 
 		<section class="features" id="features">													<!-- features -->
+			<!--
 			<div class="container features__container">
 				<div class="features__item">
 					<button type="button" class="features__button">TAB 1</button>
 					<button type="button" class="features__button">TAB 2</button>
 					<button type="button" class="features__button">TAB 3</button>
-					<!-- todo: это будут чек боксы, каждый чекбоск помещаем в див, дивом стилизуем кнопку, даем класс и потом в css делаем запись в духе: .classчекбокса ~ .classСодержимого. После каждого чекбокса обязательно сразу давать свое содержимое.-->
+
 				</div>
-				<div class="features__item">			<!-- todo: lastchild и firstchild убераем. а этому диву в котором 3 кнопки даем бородер, бордер радиус, и overflow: hidden -->
+				<div class="features__item">
 					<h3 class="features__title">Tabs with soft transitioning effect</h3>
 					<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
 						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
@@ -110,7 +111,80 @@
 				<div class="features__item">
 					<img src="img/features__image.png" alt="black city">
 				</div>
-				
+			</div>
+			-->
+
+			<!-- todo: это будут чек боксы, каждый чекбоск помещаем в див, дивом стилизуем кнопку, даем класс и потом в css делаем запись в духе: .classчекбокса ~ .classСодержимого. После каждого чекбокса обязательно сразу давать свое содержимое.-->
+			<!-- todo: lastchild и firstchild убераем. а этому диву в котором 3 кнопки даем бородер, бордер радиус, и overflow: hidden -->
+			<div class="container features__container">
+				<input type="radio" name="odin" checked="checked" id="vk1" />
+				<label for="vk1">TAB 1</label>
+				<input type="radio" name="odin" id="vk2" />
+				<label for="vk2">TAB 2</label>
+				<input type="radio" name="odin" id="vk3" />
+				<label for="vk3">TAB 3</label>
+				<div>																		<!-- содержимое 1 таба -->
+					<div class="features__item">
+						<h3 class="features__title">
+							Tabs with soft transitioning effect (TAB 1)
+						</h3>
+						<p class="features__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
+							bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+							penatibus et magnis dis parturient montes.
+						</p>
+						<p class="features__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
+							bibendum laoreet.
+						</p>
+						<button type="button" class="features__button--download">Download</button>
+					</div>
+					<div class="features__item">
+						<img src="img/features__image.png" alt="black city">
+					</div>
+				</div>
+				<div>																		<!-- содержимое 2 таба -->
+					<div class="features__item">
+						<h3 class="features__title">
+							Tabs with soft transitioning effect (TAB 2)
+						</h3>
+						<p class="features__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
+							bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+							penatibus et magnis dis parturient montes.
+						</p>
+						<p class="features__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
+							bibendum laoreet.
+						</p>
+						<button type="button" class="features__button--download">Download</button>
+					</div>
+						<img src="img/features__image.png" alt="black city">
+					</div>
+				</div>
+				<div>																		<!-- содержимое 3 таба -->
+					<div class="features__item">
+						<h3 class="features__title">
+							Tabs with soft transitioning effect (TAB 3)
+						</h3>
+						<p class="features__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
+							bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+							penatibus et magnis dis parturient montes.
+						</p>
+						<p class="features__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
+							bibendum laoreet.
+						</p>
+						<button type="button" class="features__button--download">Download</button>
+					</div>
+					<div class="features__item">
+						<img src="img/features__image.png" alt="black city">
+					</div>
+				</div>
 			</div>
 		</section>
 

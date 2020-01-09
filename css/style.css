@@ -350,41 +350,12 @@ a {
 /* Features */
 .features {			/* height: 595px */		/* todo: shadow top */
 	background-color: #f5f5f5;
+	padding-top: 154px;
+	padding-bottom: 140px;
 }
 
 .features__container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.features__button {
-	display: block;
-	font-size: 15px;
-	font-family: "Open Sans", sans-serif;
-	color: #fff;
-	font-weight: bold;
-	line-height: 1.333;
-	background-color: #333;
-	padding: 48px 34px;
-	border: 1px solid #f5f5f5;
-	cursor: pointer;
-}
-
-.features__button:first-child {
-	border-bottom: none;
-	border-radius: 2px 2px 0 0;
-	margin-top: 147px;
-}
-
-.features__button:last-child {
-	border-top: none;
-	border-radius: 0 0 2px 2px;
-	margin-bottom: 115px;
-}
-
-.features__button:hover {
-	background-color: #ff8b38;
+	position: relative;
 }
 
 .features__title {
@@ -423,6 +394,56 @@ a {
 	box-shadow: none;
 }
 
+.features__container > div,
+.features__container > input {					/* > означает что будет выбран только прямой потомок класса features__container */
+	display: none;
+	min-height: 330px; 							/* 110px × 3 вкладки */
+}
+
+.features__container label {					/* выберутся все потомки класса features__container (в том числе и не прямые) */
+	position: absolute;							/* да */
+	left: -7px;									/* да */
+	top: -7px;									/* да */
+	width: 110px;								/* да */
+	height: 110px;								/* да */
+	border: 1px solid #aaa;
+	line-height: 110px;							/* да (центрирование по-вертикали */
+	text-align: center;							/* да */
+	font-size: 15px;							/* да */
+	font-family: "Open Sans", sans-serif;		/* да */
+	color: #fff;								/* да */
+	font-weight: bold;							/* да */
+	background-color: #333;						/* да */
+	cursor: pointer;
+}
+
+.features__container label:nth-of-type(1) {		/* выберется первый label, являющийся потомком класса features__container (не важно прямой или не прямой потомок) */
+	border-radius: 5px 5px 0 0;					/* да */
+}
+
+.features__container label:nth-of-type(2) {		/* выберется втородй label, являющийся потомком класса features__container (не важно прямой или не прямой потомок) */
+	top: 104px; 								/* 110px + 1px border - 7px */
+}
+
+.features__container label:nth-of-type(3) {		/* аналогично третий label, потомок features__container */
+	top: 215px; 								/* 110px + 110px + 1px border первой вкладки + 1px border второй вкладки - 7px */
+	border-radius: 0 0 5px 5px;					/* да */
+}
+
+.features__container input[type="radio"]:checked + label {				/* + означает что будет выбран только первый label который идет сразу за input[type="radio"]:checked */
+	background-color: #ff8b38;											/* :checked - означает что будет выбран элемент отмеченный элемент радио-кнопки */
+}
+
+.features__container > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.features__container > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.features__container > input:nth-of-type(3):checked ~ div:nth-of-type(3) {		/* ~ похож на +, отличается тем, что будет выбран не только первый элемент который следует сразу за селктором который прописан до ~, а все */
+	display: block;
+	padding-left: 205px;
+}
+
+.features__item {
+	max-width: 480px;
+}
 
 /* About */
 .about__container {
@@ -515,10 +536,8 @@ a {
 	padding: 18px;
 	font-style: italic;
 }
-
-.prices__line {
-	height: 5px;
-	background-color: #ff8b38;
+.prices__type:first-child, .prices__type:last-child {
+	border-bottom: 5px solid #ff8b38;
 	margin-bottom: 1px;
 }
 
