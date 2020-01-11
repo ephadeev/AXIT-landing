@@ -47,7 +47,7 @@ a {
 }
 
 .container {
-	width: 1100px;
+	max-width: 1100px;
 	margin: 0 auto;
 }
 
@@ -99,6 +99,11 @@ a {
 	scroll-behavior: smooth;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Header */
 .header {								/* height: 70px; */
 	background-color: #000;
@@ -106,9 +111,7 @@ a {
 }
 
 .header_container {
-	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 .header__logo {
@@ -197,6 +200,8 @@ a {
 	color: #fff;
 	width: 131px;
 	height: 38px;
+    transition: background-color 0.2s linear,
+                color 0.2s linear;
 }
 
 .button--download:hover {
@@ -263,6 +268,7 @@ a {
 	margin-top: 48px;
 	border: 2px solid rgba(0, 0, 0, 0);
 	border-radius: 0 0 2px 2px;
+    transition: background-color 0.2s linear;
 }
 
 .top-form__button:hover {
@@ -374,7 +380,7 @@ a {
 	font-size: 14px;
 	font-family: "OpenSans", sans-serif;
 	color: rgb(134, 135, 139);
-	line-height: 1.429;
+	line-height: 1.4;
 	max-width: 455px;
 	margin-bottom: 30px;
 }
@@ -391,6 +397,7 @@ a {
 	padding: 16px 24px;
 	cursor: pointer;
 	box-shadow: 0 1px 1px #777;
+    transition: background-color 0.2s linear, box-shadow 0.2s linear;
 }
 
 .features__button--download:hover {
@@ -398,55 +405,58 @@ a {
 	box-shadow: none;
 }
 
-.features__container > div,
-.features__container > input {					/* > означает что будет выбран только прямой потомок класса features__container */
+.features__tab1,
+.features__tab2,
+.features__tab3,
+.features__tabs {
 	display: none;
-	min-height: 330px; 							/* 110px × 3 вкладки */
+	min-height: 330px;      /* 110px × 3 вкладки */
 }
 
-.features__container label {					/* выберутся все потомки класса features__container (в том числе и не прямые) */
-	position: absolute;							/* да */
-	left: -7px;									/* да */
-	top: -7px;									/* да */
-	width: 110px;								/* да */
-	height: 110px;								/* да */
+.features__tabs--label {
+	position: absolute;
+	left: -7px;
+	top: -7px;
+	width: 110px;
+	height: 110px;
 	border: 1px solid #aaa;
-	line-height: 110px;							/* да (центрирование по-вертикали */
-	text-align: center;							/* да */
-	font-size: 15px;							/* да */
-	font-family: "Open Sans", sans-serif;		/* да */
-	color: #fff;								/* да */
-	font-weight: bold;							/* да */
-	background-color: #333;						/* да */
+	line-height: 110px;
+	text-align: center;
+	font-size: 15px;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	font-weight: bold;
+	background-color: #333;
 	cursor: pointer;
 }
 
-.features__container label:nth-of-type(1) {		/* выберется первый label, являющийся потомком класса features__container (не важно прямой или не прямой потомок) */
-	border-radius: 5px 5px 0 0;					/* да */
+.features__tab1--label {
+	border-radius: 5px 5px 0 0;
 }
 
-.features__container label:nth-of-type(2) {		/* выберется втородй label, являющийся потомком класса features__container (не важно прямой или не прямой потомок) */
-	top: 104px; 								/* 110px + 1px border - 7px */
+.features__tab2--label {
+	top: 104px; 	/* 110px + 1px border - 7px */
 }
 
-.features__container label:nth-of-type(3) {		/* аналогично третий label, потомок features__container */
-	top: 215px; 								/* 110px + 110px + 1px border первой вкладки + 1px border второй вкладки - 7px */
-	border-radius: 0 0 5px 5px;					/* да */
+.features__tab3--label {
+	top: 215px; 	/* 110px + 110px + 1px border первой вкладки + 1px border второй вкладки - 7px */
+	border-radius: 0 0 5px 5px;
 }
 
-.features__container input[type="radio"]:checked + label {				/* + означает что будет выбран только первый label который идет сразу за input[type="radio"]:checked */
-	background-color: #ff8b38;											/* :checked - означает что будет выбран элемент отмеченный элемент радио-кнопки */
+.features__tabs:checked + .features__tabs--label {	/* + означает что будет выбран только первый элемент с классом features__tabs--label который идет сразу за input[type="radio"]:checked */
+	background-color: #ff8b38;
 }
 
-.features__container > input:nth-of-type(1):checked ~ div:nth-of-type(1),
-.features__container > input:nth-of-type(2):checked ~ div:nth-of-type(2),
-.features__container > input:nth-of-type(3):checked ~ div:nth-of-type(3) {		/* ~ похож на +, отличается тем, что будет выбран не только первый элемент который следует сразу за селктором который прописан до ~, а все */
-	display: block;
+#tab1:checked ~ .features__tab1,
+#tab2:checked ~ .features__tab2,
+#tab3:checked ~ .features__tab3 {		/* ~ похож на +, отличается тем, что будет выбран не только первый элемент который следует сразу за селктором который прописан до ~, а все */
+	display: flex;
+    justify-content: space-between;
 	padding-left: 205px;
 }
 
 .features__item {
-	max-width: 480px;
+
 }
 
 /* About */
@@ -495,10 +505,9 @@ a {
 }
 
 .prices__container {
-	display: flex;
 	align-items: flex-end;
-	justify-content: space-between;
-	margin-top: 80px;
+	padding-top: 80px;
+    padding-bottom: 92px;
 }
 
 .prices__item {
@@ -540,7 +549,7 @@ a {
 	padding: 18px;
 	font-style: italic;
 }
-.prices__type:first-child, .prices__type:last-child {
+.prices__line {
 	border-bottom: 5px solid #ff8b38;
 	margin-bottom: 1px;
 }
@@ -567,7 +576,7 @@ a {
 }
 
 .prices_advantage:last-child {
-	margin-bottom: 92px;
+
 }
 
 /* Reviews */		/* h: 591px */
@@ -576,8 +585,6 @@ a {
 }
 
 .reviews__container {
-	display: flex;
-	justify-content: space-between;
 	margin-top: 55px;
 }
 
@@ -661,8 +668,6 @@ a {
 }
 
 .contacts__container {
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 48px;
 }
 
@@ -698,13 +703,15 @@ a {
 
 	color: #fff;
 	background-color: #ff9b51;
+    box-shadow: 0 2px 2px #777;
+    transition: background-color 0.2s linear, box-shadow 0.2s linear;
+
 	font-size: 14px;
 	font-family: "OpenSans", sans-serif;
     cursor: pointer;
 
 	border: 2px solid rgba(0, 0, 0, 0);
 	border-radius: 3px;
-    box-shadow: 0 2px 2px #777;
 }
 
 .contacts__form--button:hover {

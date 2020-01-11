@@ -14,7 +14,7 @@
 
 <body>
 	<header class="header">																		<!-- header -->
-		<div class="container header_container">
+		<div class="container header_container  flex-between">
 			<a href="#">
 				<img class="header__logo" src="img/logo.png" alt="axit">
 			</a>
@@ -89,7 +89,7 @@
 			</div>
 		</section>
 
-		<section class="features scroll-smooth" id="features">													<!-- features -->
+		<section class="features scroll-smooth" id="features">										<!-- features -->
 			<!--
 			<div class="container features__container">
 				<div class="features__item">
@@ -114,16 +114,14 @@
 			</div>
 			-->
 
-			<!-- todo: это будут чек боксы, каждый чекбоск помещаем в див, дивом стилизуем кнопку, даем класс и потом в css делаем запись в духе: .classчекбокса ~ .classСодержимого. После каждого чекбокса обязательно сразу давать свое содержимое.-->
-			<!-- todo: lastchild и firstchild убераем. а этому диву в котором 3 кнопки даем бородер, бордер радиус, и overflow: hidden -->
 			<div class="container features__container">
-				<input type="radio" name="odin" checked="checked" id="vk1" />
-				<label for="vk1">TAB 1</label>
-				<input type="radio" name="odin" id="vk2" />
-				<label for="vk2">TAB 2</label>
-				<input type="radio" name="odin" id="vk3" />
-				<label for="vk3">TAB 3</label>
-				<div>																		<!-- содержимое 1 таба -->
+				<input class="features__tabs" type="radio" name="odin" checked="checked" id="tab1" />
+				<label class="features__tabs--label  features__tab1--label" for="tab1">TAB 1</label>
+				<input class="features__tabs" type="radio" name="odin" id="tab2" />
+				<label class="features__tabs--label  features__tab2--label" for="tab2">TAB 2</label>
+				<input class="features__tabs" type="radio" name="odin" id="tab3" />
+				<label class="features__tabs--label  features__tab3--label" for="tab3">TAB 3</label>
+				<div class="features__tab1">												<!-- содержимое 1 таба -->
 					<div class="features__item">
 						<h3 class="features__title">
 							Tabs with soft transitioning effect (TAB 1)
@@ -138,13 +136,13 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
 							bibendum laoreet.
 						</p>
-						<button type="button" class="features__button--download">Download</button>
-					</div>
+						<button class="features__button--download" type="button">Download</button>
+					</div>	<!-- .features__item -->
 					<div class="features__item">
 						<img src="img/features__image.png" alt="black city">
 					</div>
 				</div>
-				<div>																		<!-- содержимое 2 таба -->
+				<div class="features__tab2">												<!-- содержимое 2 таба -->
 					<div class="features__item">
 						<h3 class="features__title">
 							Tabs with soft transitioning effect (TAB 2)
@@ -159,13 +157,13 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
 							bibendum laoreet.
 						</p>
-						<button type="button" class="features__button--download">Download</button>
-					</div>
+						<button class="features__button--download" type="button">Download</button>
+					</div>	<!-- .features__item -->
                     <div class="features__item">
 						<img src="img/features__image.png" alt="black city">
 					</div>
 				</div>
-				<div>																		<!-- содержимое 3 таба -->
+				<div class="features__tab3">												<!-- содержимое 3 таба -->
 					<div class="features__item">
 						<h3 class="features__title">
 							Tabs with soft transitioning effect (TAB 3)
@@ -180,8 +178,8 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
 							bibendum laoreet.
 						</p>
-						<button type="button" class="features__button--download">Download</button>
-					</div>
+						<button class="features__button--download" type="button">Download</button>
+					</div>	<!-- .features__item -->
 					<div class="features__item">
 						<img src="img/features__image.png" alt="black city">
 					</div>
@@ -191,7 +189,7 @@
 
 		<section class="about">																		<!-- about -->
 			<div class="container">
-				<h2 id="about" class="titles scroll-smooth">Why this is awesome</h2>
+				<h2 class="titles  scroll-smooth" id="about">Why this is awesome</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="about__container">
                     <div class="about__item">					<!-- todo: дать ширину итемам, и justify content будет вроде бы start, а не space-between -->
@@ -227,14 +225,13 @@
 
 		<section class="prices">																	<!-- prices -->
 			<div class="container">
-				<h2 id="prices" class="titles scroll-smooth">Pricing options</h2>
+				<h2 class="titles  scroll-smooth" id="prices">Pricing options</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<div class="prices__container">
+				<div class="prices__container  flex-between">
 					<div class="prices__item">
 						<div class="prices__name">Basic</div>
 						<div class="prices__value">$<span class="prices__value--big">0</span></div>
-						<div class="prices__type">Free for Life</div>
-						<div class="prices__line"></div>					<!-- todo: сделать через бордёр боттом-->
+						<div class="prices__type  prices__line">Free for Life</div>
 						<div class="prices_advantage">1 gb of space</div>
 						<div class="prices_advantage">10 gb of bandwidth</div>
 						<div class="prices_advantage">3 websites</div>
@@ -257,8 +254,7 @@
 					<div class="prices__item">
 						<div class="prices__name">Enterprise</div>
 						<div class="prices__value">$<span class="prices__value--big">70</span></div>
-						<div class="prices__type">Monthly Payment</div>
-						<div class="prices__line"></div> 					<!-- todo: сделать через бордёр боттом-->
+						<div class="prices__type prices__line">Monthly Payment</div>
 						<div class="prices_advantage">Unlimited space</div>
 						<div class="prices_advantage">unlimited bandwidth</div>
 						<div class="prices_advantage">100 websites</div>
@@ -266,15 +262,15 @@
 						<div class="prices_advantage">wordpress integration</div>
 						<div class="prices_advantage">24/7 customer support</div>
 					</div>
-				</div>
-			</div>
+				</div>		<!-- .prices__container -->
+			</div>		<!-- .container -->
 		</section>
 
 		<section class="reviews">																	<!-- reviews -->
 			<div class="container">
-				<h2 id="reviews" class="titles scroll-smooth">What our customers are saying</h2>
+				<h2 class="titles scroll-smooth" id="reviews">What our customers are saying</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<div class="reviews__container">
+				<div class="reviews__container  flex-between">
 					<div class="reviews__item">
 						<div class="reviews__text">
 							Lorem ipsum dolor sit amet,
@@ -287,7 +283,7 @@
 							<div class="triangle-down"></div>		<!-- todo: сделать бефор элментом спозиционировать абсолютно, текстовому полю к которому треугольник относится дать дисплей релатив, и треугольник тогда через left и bottom подвинуться на сколько надо -->
 						</div>
 						<div class="reviews__authors">
-							<img src="img/reviews__avatar.png" alt="author's face" class="reviews__image" />
+							<img class="reviews__image" src="img/reviews__avatar.png" alt="author's face"/>
 							<div class="reviews__author">
 								<div class="reviews__name">Jeremy H.</div>
 								<div class="reviews__profession">Manager</div>
@@ -306,7 +302,7 @@
 							<div class="triangle-down"></div>
 						</div>
 						<div class="reviews__authors">
-							<img src="img/reviews__avatar.png" alt="author's face" class="reviews__image" />
+							<img class="reviews__image" src="img/reviews__avatar.png" alt="author's face"/>
 							<div class="reviews__author">
 								<div class="reviews__name">John S.</div>
 								<div class="reviews__profession">Freelancer</div>
@@ -325,7 +321,7 @@
 							<div class="triangle-down"></div>
 						</div>
 						<div class="reviews__authors">
-							<img src="img/reviews__avatar.png" alt="author's face" class="reviews__image" />
+							<img class="reviews__image" src="img/reviews__avatar.png" alt="author's face"/>
 							<div class="reviews__author">
 								<div class="reviews__name">Susan W.</div>
 								<div class="reviews__profession">Photographer</div>
@@ -343,41 +339,41 @@
 					Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
 				</p>
 				<div class="button--download design__button">
-					<a href="#" class="link--download">Download</a>							<!-- Download button -->
+					<a class="link--download" href="#">Download</a>							<!-- Download button -->
 				</div>
 			</div>
 		</section>
 
 		<section class="contacts">																	<!-- contacts -->
 			<div class="container">
-				<h2 id="contacts" class="titles scroll-smooth">Contact us</h2>
+				<h2 class="titles scroll-smooth" id="contacts">Contact us</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			</div>
-			<form action="" class="contacts__form">
-				<div class="contacts__container">
+			<form class="contacts__form" action="">
+				<div class="contacts__container  flex-between">
 					<div>
-						<input placeholder="Name" type="text" required class="contacts__form--input">
-						<input placeholder="Email" type="text" required class="contacts__form--input">
-						<input placeholder="Subject" type="text" required class="contacts__form--input">
+						<input class="contacts__form--input" placeholder="Name" type="text" required>
+						<input class="contacts__form--input" placeholder="Email" type="text" required>
+						<input class="contacts__form--input" placeholder="Subject" type="text" required>
 					</div>
 					<div>
-						<textarea placeholder="Message" required class="contacts__form--textarea"></textarea>
+						<textarea class="contacts__form--textarea" placeholder="Message" required></textarea>
 					</div>
 				</div>
-				<input type="submit" value="Send Message" class="contacts__form--button">
+				<input class="contacts__form--button" type="submit" value="Send Message">
 			</form>
 		</section>
 	</main>
 	<footer class="footer">																				<!-- footer -->
 		<div class="container">
 			<div class="footer__links">
-                <a href="https://www.facebook.com/" target="_blank" class="footer__link facebook"></a>
-                <a href="https://twitter.com/" target="_blank" class="footer__link twitter"></a>
-                <a href="https://google.com" target="_blank" class="footer__link google"></a>
-                <a href="https://www.pinterest.com/" target="_blank" class="footer__link pinterest"></a>
-                <a href="https://www.instagram.com/" target="_blank" class="footer__link instagram"></a>
-                <a href="#" target="_blank" class="footer__link stumbleupon"></a>
-                <a href="#" target="_blank" class="footer__link rss"></a>
+                <a class="footer__link facebook" href="https://www.facebook.com/" target="_blank"></a>
+                <a class="footer__link twitter" href="https://twitter.com/" target="_blank"></a>
+                <a class="footer__link google" href="https://google.com" target="_blank"></a>
+                <a class="footer__link pinterest" href="https://www.pinterest.com/" target="_blank"></a>
+                <a class="footer__link instagram" href="https://www.instagram.com/" target="_blank"></a>
+                <a class="footer__link stumbleupon" href="#" target="_blank"></a>
+                <a class="footer__link rss" href="#" target="_blank"></a>
 			</div>
 			<div class="footer__copyright">
 				© 2015 Axure Themes
