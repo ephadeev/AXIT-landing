@@ -511,7 +511,7 @@ a {
 }
 
 .prices__item {
-	width: 343px;
+	width: 31.1818%;
 }
 
 .prices__name {
@@ -581,34 +581,40 @@ a {
 
 /* Reviews */		/* h: 591px */
 .reviews {
-	margin-bottom: 101px;
+	padding-top: 55px;
+	padding-bottom: 101px;
 }
 
 .reviews__container {
-	margin-top: 55px;
+
 }
 
 .reviews__item {
-
+	width: 24.818181%;
 }
 
 .reviews__text {
+	position: relative;
 	font-size: 14px;
 	font-family: "Open Sans", sans-serif;
 	color: rgb(134, 135, 139);
 	line-height: 1.2;
-	width: 273px;		/* todo: сделать в процентах от контейнера */
+	width: calc(100% - 12px - 12px);		/* todo: сделать в процентах от контейнера 273px */
 	background-color: #f5f5f5;
 	padding: 24px 12px;
+	margin-bottom: 23px;
 }
 
-.reviews__text:before {
+.reviews__text::before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 27px;
 	width: 0;
 	height: 0;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-top: 20px solid #f5f5f5;
-	margin: 0 auto 8px;
 }
 /*
 .triangle-container {
@@ -680,7 +686,7 @@ a {
 }
 
 .contacts__item {
-	width: 40%;
+	width: 48%;
 }
 
 .contacts__form--input {
@@ -688,8 +694,9 @@ a {
 	font-family: "OpenSans", sans-serif;
 	color: #d6d6d6;
 	display: block;
-	margin: 32px auto 0;	/* todo: может эти 32px сверху куда-то в более очевидное место переопределить? может контейнеру? */
-	padding: 10px 10px 13px;
+	width: calc(100% - 13px - 13px - 1px - 1px);
+	margin: 32px 0 0;	/* todo: может эти 32px сверху куда-то в более очевидное место переопределить? может контейнеру? */
+	padding: 10px 13px 13px;
 	border: 1px solid transparent;
 	border-bottom-color: #d6d6d6;
 }
@@ -699,9 +706,9 @@ a {
 	font-family: "OpenSans", sans-serif;
 	color: #d6d6d6;
 	display: block;
-	margin: 32px auto 0;
-	padding: 10px 10px 143px;
-	width: 100%;		/* 507px */
+	width: calc(100% - 13px - 13px - 1px - 1px);
+	margin: 32px 0 0;
+	padding: 10px 13px 143px;
 	border: 1px solid transparent;
 	border-bottom-color: #d6d6d6;
 }
@@ -738,8 +745,9 @@ a {
 }
 
 .footer__links {
-	margin-bottom: 15px;
+	margin: 0 auto 15px;
 	height: 23px;
+	max-width: 28.8181%;
 }
 
 .footer__link {
@@ -748,11 +756,6 @@ a {
 	background-repeat: no-repeat;
 	height: 23px;
 	width: 27px;
-	margin-right: 30px;
-}
-
-.footer__link:last-child {
-	margin-right: 0;
 }
 
 .facebook {

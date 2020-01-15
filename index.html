@@ -116,7 +116,7 @@
 						<button class="features__button--download" type="button">Download</button>
 					</div>	<!-- .features__item -->
 					<div class="features__item">
-						<img src="img/features__image.png" alt="black city">
+						<img class="features__image" src="img/features__image.png" alt="black city">
 					</div>
 				</div>
 				<div class="features__tab2">												<!-- содержимое 2 таба -->
@@ -204,7 +204,7 @@
 			<div class="container">
 				<h2 class="titles  scroll-smooth" id="prices">Pricing options</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<div class="prices__container  flex-between">
+				<div class="prices__container  flex-between prices__mobile">
 					<div class="prices__item">
 						<div class="prices__name">Basic</div>
 						<div class="prices__value">$<span class="prices__value--big">0</span></div>
@@ -239,8 +239,8 @@
 						<div class="prices_advantage">wordpress integration</div>
 						<div class="prices_advantage">24/7 customer support</div>
 					</div>
-				</div>		<!-- .prices__container -->
-			</div>		<!-- .container -->
+				</div>	<!-- .prices__container -->
+			</div>	<!-- .container -->
 		</section>
 
 		<section class="reviews">																	<!-- reviews -->
@@ -277,9 +277,11 @@
 							odio aspernatur ex, architecto eaque
 							quo suscipit.
 						</div>
+						<!--
 						<div class="triangle-container">
 							<div class="triangle-down"></div>
 						</div>
+						-->
 						<div class="reviews__authors">
 							<img class="reviews__image" src="img/reviews__avatar.png" alt="author's face"/>
 							<div class="reviews__author">
@@ -296,9 +298,11 @@
 							odio aspernatur ex, architecto eaque
 							quo suscipit.
 						</div>
+						<!--
 						<div class="triangle-container">
 							<div class="triangle-down"></div>
 						</div>
+						-->
 						<div class="reviews__authors">
 							<img class="reviews__image" src="img/reviews__avatar.png" alt="author's face"/>
 							<div class="reviews__author">
@@ -334,7 +338,7 @@
 							<input class="contacts__form--input" placeholder="Email" type="text" required>
 							<input class="contacts__form--input" placeholder="Subject" type="text" required>
 						</div>
-						<div class="contacts__item"> <!-- todo: need to fix adaptive -->
+						<div class="contacts__item">
 							<textarea class="contacts__form--textarea" placeholder="Message" required></textarea>
 						</div>
 					</div>
@@ -345,7 +349,7 @@
 	</main>
 	<footer class="footer">																				<!-- footer -->
 		<div class="container">
-			<div class="footer__links">
+			<div class="footer__links flex-between">
                 <a class="footer__link facebook" href="https://www.facebook.com/" target="_blank"></a>
                 <a class="footer__link twitter" href="https://twitter.com/" target="_blank"></a>
                 <a class="footer__link google" href="https://google.com" target="_blank"></a>

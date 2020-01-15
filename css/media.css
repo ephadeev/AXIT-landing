@@ -1,24 +1,133 @@
+/* 1000 - 1200 */
 @media (max-width: 1200px) {
     .container {
         width: 960px;
     }
 }
 
+/* 992 - 1000 */
 @media (max-width: 1000px) {
     .container {
         width: 720px;
     }
 }
 
-@media (max-width: 992px) {
+/* 576 - 992 */
+@media (max-width: 800px) {
     .container {
         width: 540px;
     }
+    .social__container {
+        display: block;
+    }
+    .features__image {
+        display: none;
+    }
+    .reviews__item:last-child {
+        display: none;
+    }
+    .reviews__item {
+        width: 46%;
+    }
 }
 
+/* 0 - 576 */
 @media (max-width: 576px) {
     .container {
-        width: 100%;
+        width: calc(100% - 12px - 12px);
         padding: 0 12px;
+        margin: 0;
+    }
+    .flex-between {
+        display: block;
+    }
+    .titles {
+        font-size: 28px;
+    }
+    .description {
+        width: calc(100% - 12px - 12px);
+    }
+    .description__title {
+        font-size: 28px;
+    }
+    .top-form {
+        width: calc(100% - 12px - 12px);
+    }
+    .top-form_title {
+        font-size: 14px;
+    }
+    .top-form__input {
+        max-width: calc(100% - 10px - 10px - 1px - 1px);
+    }
+    .social__container {
+        display: block;
+    }
+    .social__links {
+        height: auto;
+    }
+    .features__title {
+        font-size: 14px;
+    }
+    .features__text {
+        max-width: calc(100% - 12px - 12px);
+    }
+
+    .features__tabs--label {
+        left: 12px;
+        top: -51px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+    }
+    .features__tab1--label {
+        border-radius: 5px 0 0 5px;
+    }
+    .features__tab2--label {
+        top: -51px;
+        left: calc(12px + 51px);
+    }
+    .features__tab3--label {
+        top: -51px;
+        left: calc(12px + 102px);
+        border-radius: 0 5px 5px 0;
+    }
+    #tab1:checked ~ .features__tab1,
+    #tab2:checked ~ .features__tab2,
+    #tab3:checked ~ .features__tab3 {		/* ~ похож на +, отличается тем, что будет выбран не только первый элемент который следует сразу за селктором который прописан до ~, а все */
+        padding-left: 0;
+    }
+
+    .reviews__item:first-child {
+        display: none;
+    }
+    .about__container {
+        display: block;
+    }
+    .about__text {
+        font-size: 12px;
+    }
+    .reviews__item {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .prices__mobile {
+        display: block;
+    }
+    .prices__item {
+        width: calc(100% - 12px - 12px);
+    }
+    .banner__container {
+        display: block;
+    }
+    .menu__item {
+        display: block;
+        margin-right: 0;
+    }
+    .contacts__item {
+        width: calc(100% - 12px - 12px);
+    }
+    .footer__links {
+        max-width: calc(100% - 12px - 12px);
     }
 }
