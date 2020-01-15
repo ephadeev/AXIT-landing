@@ -597,7 +597,7 @@ a {
 	font-family: "Open Sans", sans-serif;
 	color: rgb(134, 135, 139);
 	line-height: 1.2;
-	width: 273px;
+	width: 273px;		/* todo: сделать в процентах от контейнера */
 	background-color: #f5f5f5;
 	padding: 24px 12px;
 }
@@ -672,7 +672,6 @@ a {
 }
 
 .contacts__form {
-	width: 1122px;
 	margin: 2px auto 80px;
 }
 
@@ -680,14 +679,17 @@ a {
 	margin-bottom: 48px;
 }
 
+.contacts__item {
+	width: 40%;
+}
+
 .contacts__form--input {
 	font-size: 14px;
 	font-family: "OpenSans", sans-serif;
 	color: #d6d6d6;
 	display: block;
-	margin: 32px auto 0;
+	margin: 32px auto 0;	/* todo: может эти 32px сверху куда-то в более очевидное место переопределить? может контейнеру? */
 	padding: 10px 10px 13px;
-	width: 507px;
 	border: 1px solid transparent;
 	border-bottom-color: #d6d6d6;
 }
