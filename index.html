@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>AXIT</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
@@ -90,30 +91,6 @@
 		</section>
 
 		<section class="features scroll-smooth" id="features">										<!-- features -->
-			<!--
-			<div class="container features__container">
-				<div class="features__item">
-					<button type="button" class="features__button">TAB 1</button>
-					<button type="button" class="features__button">TAB 2</button>
-					<button type="button" class="features__button">TAB 3</button>
-
-				</div>
-				<div class="features__item">
-					<h3 class="features__title">Tabs with soft transitioning effect</h3>
-					<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
-						bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-						justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-						penatibus et magnis dis parturient montes.</p>
-					<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean euismod
-						bibendum laoreet.</p>
-					<button type="button" class="features__button--download">Download</button>
-				</div>
-				<div class="features__item">
-					<img src="img/features__image.png" alt="black city">
-				</div>
-			</div>
-			-->
-
 			<div class="container features__container">
 				<input class="features__tabs" type="radio" name="odin" checked="checked" id="tab1" />
 				<label class="features__tabs--label  features__tab1--label" for="tab1">TAB 1</label>
@@ -279,9 +256,11 @@
 							odio aspernatur ex, architecto eaque
 							quo suscipit.
 						</div>
+						<!--
 						<div class="triangle-container">
-							<div class="triangle-down"></div>		<!-- todo: сделать бефор элментом спозиционировать абсолютно, текстовому полю к которому треугольник относится дать дисплей релатив, и треугольник тогда через left и bottom подвинуться на сколько надо -->
+							<div class="triangle-down"></div>
 						</div>
+						-->
 						<div class="reviews__authors">
 							<img class="reviews__image" src="img/reviews__avatar.png" alt="author's face"/>
 							<div class="reviews__author">
@@ -348,20 +327,20 @@
 			<div class="container">
 				<h2 class="titles scroll-smooth" id="contacts">Contact us</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-			<form class="contacts__form" action="">
-				<div class="contacts__container  flex-between">
-					<div>
-						<input class="contacts__form--input" placeholder="Name" type="text" required>
-						<input class="contacts__form--input" placeholder="Email" type="text" required>
-						<input class="contacts__form--input" placeholder="Subject" type="text" required>
+				<form class="contacts__form" action="">
+					<div class="contacts__container  flex-between">
+						<div>
+							<input class="contacts__form--input" placeholder="Name" type="text" required>
+							<input class="contacts__form--input" placeholder="Email" type="text" required>
+							<input class="contacts__form--input" placeholder="Subject" type="text" required>
+						</div>
+						<div> <!-- todo: need to fix adaptive -->
+							<textarea class="contacts__form--textarea" placeholder="Message" required></textarea>
+						</div>
 					</div>
-					<div>
-						<textarea class="contacts__form--textarea" placeholder="Message" required></textarea>
-					</div>
-				</div>
-				<input class="contacts__form--button" type="submit" value="Send Message">
-			</form>
+					<input class="contacts__form--button" type="submit" value="Send Message">
+				</form>
+			</div> <!-- .container -->
 		</section>
 	</main>
 	<footer class="footer">																				<!-- footer -->
