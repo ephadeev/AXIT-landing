@@ -19,22 +19,28 @@
 			<a href="#">
 				<img class="header__logo" src="img/logo.png" alt="axit">
 			</a>
-			<nav>
+			<nav id="dropdown">
+                <div class="dropdown-container">
+                    <div class=dropdown-div> </div>
+                    <div class=dropdown-div> </div>
+                    <div class=dropdown-div> </div>
+                    <div class=dropdown-div> </div>
+                </div>
 				<ul class="menu">
 					<li class="menu__item">
-						<a href="#features" class="header__link">Features</a>
+						<a href="#features" class="header__link"><div class="link--text">Features</div></a>
 					</li>
 					<li class="menu__item">
-						<a href="#about" class="header__link">About</a>
+						<a href="#about" class="header__link"><div class="link--text">About</div></a>
 					</li>
 					<li class="menu__item">
-						<a href="#prices" class="header__link">Pricing</a>
+						<a href="#prices" class="header__link"><div class="link--text">Pricing</div></a>
 					</li>
 					<li class="menu__item">
-						<a href="#reviews" class="header__link">Reviews</a>
+						<a href="#reviews" class="header__link"><div class="link--text">Reviews</div></a>
 					</li>
 					<li class="menu__item">
-						<a href="#contacts" class="header__link">Contact</a>
+						<a href="#contacts" class="header__link"><div class="link--text">Contact</div></a>
 					</li>
 				</ul>
 			</nav>
@@ -78,7 +84,7 @@
 					<p class="social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Aenean euismod bibendum laoreet.</p>
 				</div>
-				<div class="social__links">
+				<div class="social__links  flex-between">
 					<a href="https://www.facebook.com/" target="_blank" class="social__link social__facebook"></a>
                     <a href="https://twitter.com/" target="_blank" class="social__link social__twitter"></a>
                     <a href="https://google.com" target="_blank" class="social__link social__google"></a>
@@ -90,7 +96,7 @@
 			</div>
 		</section>
 
-		<section class="features scroll-smooth" id="features">										<!-- features -->
+		<section class="features  scroll-smooth  section-paddings" id="features">					<!-- features -->
 			<div class="container features__container">
 				<input class="features__tabs" type="radio" name="odin" checked="checked" id="tab1" />
 				<label class="features__tabs--label  features__tab1--label" for="tab1">TAB 1</label>
@@ -137,7 +143,7 @@
 						<button class="features__button--download" type="button">Download</button>
 					</div>	<!-- .features__item -->
                     <div class="features__item">
-						<img src="img/features__image.png" alt="black city">
+						<img class="features__image" src="img/features__image.png" alt="black city">
 					</div>
 				</div>
 				<div class="features__tab3">												<!-- содержимое 3 таба -->
@@ -158,13 +164,13 @@
 						<button class="features__button--download" type="button">Download</button>
 					</div>	<!-- .features__item -->
 					<div class="features__item">
-						<img src="img/features__image.png" alt="black city">
+						<img class="features__image" src="img/features__image.png" alt="black city">
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="about">																		<!-- about -->
+		<section class="about  section-paddings">														<!-- about -->
 			<div class="container">
 				<h2 class="titles  scroll-smooth" id="about">Why this is awesome</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -200,7 +206,7 @@
 			</div>
 		</section>
 
-		<section class="prices">																	<!-- prices -->
+		<section class="prices  section-paddings">														<!-- prices -->
 			<div class="container">
 				<h2 class="titles  scroll-smooth" id="prices">Pricing options</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -243,7 +249,7 @@
 			</div>	<!-- .container -->
 		</section>
 
-		<section class="reviews">																	<!-- reviews -->
+		<section class="reviews  section-paddings">													<!-- reviews -->
 			<div class="container">
 				<h2 class="titles scroll-smooth" id="reviews">What our customers are saying</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -327,7 +333,7 @@
 			</div>
 		</section>
 
-		<section class="contacts">																	<!-- contacts -->
+		<section class="contacts  section-paddings">												<!-- contacts -->
 			<div class="container">
 				<h2 class="titles scroll-smooth" id="contacts">Contact us</h2>
                 <p class="texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

@@ -52,7 +52,6 @@ a {
 }
 
 .titles {
-	padding-top: 105px;
 	font-size: 36px;
 	font-family: "Raleway", sans-serif;
 	color: rgb(33, 33, 33);
@@ -104,6 +103,10 @@ a {
     justify-content: space-between;
 }
 
+.section-paddings {
+    padding-top: 108px;
+}
+
 /* Header */
 .header {								/* height: 70px; */
 	background-color: #000;
@@ -150,6 +153,7 @@ a {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    padding: 140px 0;
 }
 
 .banner__container {
@@ -160,7 +164,7 @@ a {
 
 /* Description */
 .description {
-	width: 515px;
+	width: 46.8181%;
 }
 
 .description_logo {
@@ -219,12 +223,11 @@ a {
 
 /* Top Form */
 .top-form {
-	width: 360px;
+	width: 32.7272%;
 	background-color: #fff;
 	background-clip: padding-box;
 	border: 2px solid rgba(0, 0, 0, 0);
 	border-radius: 5px;
-	margin: 140px 0;
 }
 
 .top-form_title {
@@ -251,7 +254,7 @@ a {
 	display: block;
 	margin: 32px auto 0;
 	padding: 10px 10px 13px;
-	width: 285px;
+	width: calc(100% - 1px - 10px - 10px - 1px - 22px);  /*285*/
 	border: 1px solid transparent;
 	border-bottom-color: #d6d6d6;
 }
@@ -278,7 +281,7 @@ a {
 
 /* Social */
 .social {				/* height: 105px; */
-
+    padding: 20px 0;
 }
 
 .social__container {
@@ -293,7 +296,7 @@ a {
 	color: rgb(51, 51, 51);
 	font-weight: 700;
 	line-height: 1.2;
-	margin: 20px 0 1px;
+	margin-bottom: 1px;
 }
 
 .social__text {
@@ -302,12 +305,12 @@ a {
 	color: rgb(134, 135, 139);
 	line-height: 1.429;
 	max-width: 365px;
-	margin-bottom: 20px;
 }
 
 .social__links {
 	margin: 29px 0 30px;
     height: 46px;
+    width: 56.6363%
 }
 
 .social__link {
@@ -316,7 +319,6 @@ a {
     width: 24px;
     background-image: url("../img/social__icons.png");
     background-repeat: no-repeat;
-	margin-right: 30px;
 }
 
 .social__facebook {
@@ -360,7 +362,6 @@ a {
 /* Features */
 .features {			/* height: 595px */		/* todo: shadow top */
 	background-color: #f5f5f5;
-	padding-top: 154px;
 	padding-bottom: 140px;
 }
 
@@ -460,6 +461,11 @@ a {
 }
 
 /* About */
+.about {
+    padding-bottom: 105px;
+}
+
+
 .about__container {
 	display: flex;
 	align-items: center;
@@ -496,18 +502,17 @@ a {
     font-family: "OpenSans", sans-serif;
     color: rgb(134, 135, 139);
     line-height: 1.4;
-    margin-bottom: 105px;
 }
 
 /* Prices h: 885 */
 .prices {
 	background-color: #f5f5f5;
+    padding-bottom: 92px;
 }
 
 .prices__container {
 	align-items: flex-end;
 	padding-top: 80px;
-    padding-bottom: 92px;
 }
 
 .prices__item {
@@ -581,7 +586,6 @@ a {
 
 /* Reviews */		/* h: 591px */
 .reviews {
-	padding-top: 55px;
 	padding-bottom: 101px;
 }
 
@@ -599,7 +603,7 @@ a {
 	font-family: "Open Sans", sans-serif;
 	color: rgb(134, 135, 139);
 	line-height: 1.2;
-	width: calc(100% - 12px - 12px);		/* todo: сделать в процентах от контейнера 273px */
+	width: calc(100% - 12px - 12px);
 	background-color: #f5f5f5;
 	padding: 24px 12px;
 	margin-bottom: 23px;
@@ -616,20 +620,7 @@ a {
 	border-right: 10px solid transparent;
 	border-top: 20px solid #f5f5f5;
 }
-/*
-.triangle-container {
-	width: 70px;
-}
 
-.triangle-down {
-	width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 20px solid #f5f5f5;
-	margin: 0 auto 8px;
-}
-*/
 .reviews__authors {
 	height: 70px;
 	display: flex;
@@ -674,11 +665,11 @@ a {
 
 /* Contacts */
 .contacts {				/* height: 613px; */
-
+    padding-bottom: 80px;
 }
 
 .contacts__form {
-	margin: 2px auto 80px;
+	margin: 2px auto 0;
 }
 
 .contacts__container {
