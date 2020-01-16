@@ -467,10 +467,11 @@ a {
 
 
 .about__container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
     margin-top: 83px;
+}
+
+.about__item {
+	width: 32.3636%
 }
 
 .about__icon--container {         /* todo: переименовать! */

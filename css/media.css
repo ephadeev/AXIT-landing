@@ -242,10 +242,13 @@
         display: block;
     }
 
+
+
     .about__text {
         font-size: 12px;
     }
 
+    .about__item,
     .reviews__item {
         width: 100%;
         margin: 0 auto;
