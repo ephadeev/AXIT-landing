@@ -49,6 +49,7 @@ a {
 .container {
 	width: 1100px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .titles {
@@ -454,10 +455,6 @@ a {
 	display: flex;
     justify-content: space-between;
 	padding-left: 205px;
-}
-
-.features__item {
-
 }
 
 /* About */

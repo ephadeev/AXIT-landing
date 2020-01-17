@@ -15,18 +15,15 @@
 
 <body>
 	<header class="header">																		<!-- header -->
-		<div class="container header_container  flex-between">
+		<div class="flex-between  container  header_container">
 			<a href="#">
 				<img class="header__logo" src="img/logo.png" alt="axit">
 			</a>
 			<nav id="dropdown">
-                <div class="dropdown-container">
-                    <div class=dropdown-div> </div>
-                    <div class=dropdown-div> </div>
-                    <div class=dropdown-div> </div>
-                    <div class=dropdown-div> </div>
+                <div class="dropdown-container" id="burger">
+                    <div class="burger_line"> </div>
                 </div>
-				<ul class="menu">
+				<ul class="menu" id="menu">
 					<li class="menu__item">
 						<a href="#features" class="header__link"><div class="link--text">Features</div></a>
 					</li>
@@ -46,6 +43,8 @@
 			</nav>
 		</div><!-- .container .header_container -->
 	</header>
+
+	<section class="bg" id="bg"></section>
 
 	<main class="main">
 		<section class="banner">																		<!-- banner -->
@@ -369,6 +368,7 @@
 			</div>
 		</div>
 	</footer>
+<script src="js/main.js"></script>
 </body>
 
 </html>

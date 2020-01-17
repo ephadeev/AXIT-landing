@@ -71,18 +71,108 @@
         font-size: 28px;
     }
 
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 200px;
+        background-color: black;
+        padding: 75px 0 0 75px;
+        box-sizing: border-box;
+        transform: translateX(-100%);
+        transition: 3s;
+        z-index: 999;
+    }
+
+    .menu.visible {
+        transform: translateX(0);
+        transition: 3s;
+    }
+
     #dropdown {
-        border: 1px solid white;
-        height: 45px;
-        width: 45px;
-        max-width: 96%;
-        transition: 0.4s ease-out;
-        -webkit-transition: 0.4s ease-out;
-        overflow: hidden ;
-        background-color: white;
+        z-index: 999;
+    }
+
+    .bg {
+        display: none;
+        transition: 3s;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        opacity: .5;
+        z-index: 998;
+    }
+
+    .bg.visible {
+        display: block;
+        transition: 3s;
+    }
+
+    .header_container {
+        display: flex;
+    }
+
+    .dropdown-container {
+        display: block;
+        position: relative;
+        height: 30px;
+        width: 30px;
         cursor: pointer;
     }
 
+    .dropdown-container.cross .burger_line {
+        display: none;
+    }
+
+    .dropdown-container::before,
+    .dropdown-container::after {
+        content: "";
+    }
+
+    .burger_line,
+    .dropdown-container::before,
+    .dropdown-container::after {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+    }
+
+    .dropdown-container::before {
+        top: 0;
+        transition: 1s;
+    }
+
+    .dropdown-container::after {
+        bottom: 0;
+        transition: 1s;
+    }
+
+    .dropdown-container.cross::before {
+        transform: rotate(45deg);
+        top: 50%;
+        transition: 1s;
+    }
+
+    .dropdown-container.cross::after {
+        transform: rotate(-45deg);
+        top: 50%;
+        transition: 1s;
+    }
+
+    .burger_line {
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 1s;
+    }
+
+    /*
     #dropdown:hover {
         width: 100%;
         box-shadow: 0 1px 8px 0 lightgrey;
@@ -106,7 +196,8 @@
     }
 
     .menu {
-        overflow: hidden ;
+        height: 0;
+        overflow: hidden;
         margin: 2px 0 0 0;
         padding: 2px 0 0 0;
         border-top: 1px solid lightgrey;
@@ -140,6 +231,7 @@
         border-left: 3px solid #fe9244;
         border-right: 3px solid #fe9244;
     }
+     */
 
     .banner,
     .social {
