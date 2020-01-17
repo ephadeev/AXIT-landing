@@ -42,7 +42,7 @@
         display: none;
     }
 
-    .reviews__item:last-child {
+    .reviews__item:last-child {         /* todo: сделать слайдер из отзывов */
         display: none;
     }
 
@@ -71,6 +71,10 @@
         font-size: 28px;
     }
 
+    #dropdown {
+        z-index: 999;
+    }
+
     .menu {
         position: fixed;
         top: 0;
@@ -83,22 +87,18 @@
         padding: 75px 0 0 75px;
         box-sizing: border-box;
         transform: translateX(-100%);
-        transition: 3s;
+        transition: 1s;
         z-index: 999;
     }
 
     .menu.visible {
         transform: translateX(0);
-        transition: 3s;
-    }
-
-    #dropdown {
-        z-index: 999;
+        transition: 1s;
     }
 
     .bg {
         display: none;
-        transition: 3s;
+        transition: 1s;
         background-color: black;
         position: fixed;
         top: 0;
@@ -111,7 +111,7 @@
 
     .bg.visible {
         display: block;
-        transition: 3s;
+        transition: 1s;
     }
 
     .header_container {
@@ -171,67 +171,6 @@
         transform: translateY(-50%);
         transition: 1s;
     }
-
-    /*
-    #dropdown:hover {
-        width: 100%;
-        box-shadow: 0 1px 8px 0 lightgrey;
-        background: white;
-    }
-
-    .dropdown-container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .dropdown-div {
-        padding: 2px 0;
-        margin: 0 auto;
-        background: black;
-        background-clip: content-box;
-        width: 40px;
-        height: 3px;
-    }
-
-    .menu {
-        height: 0;
-        overflow: hidden;
-        margin: 2px 0 0 0;
-        padding: 2px 0 0 0;
-        border-top: 1px solid lightgrey;
-        width: 100%;
-        z-index: 999;
-    }
-
-    .menu__item {
-        display: block;
-        margin-right: 0;
-    }
-
-    .header__link {
-        text-decoration: none;
-    }
-
-    .link--text {
-        border-top: 1px solid lightgrey;
-        font-weight: bold ;
-        background: white;
-        color: #595959;
-        margin: 0;
-        left: 0;
-        padding: 15px 5px 10px 20px;
-        letter-spacing: 2px;
-        transition: 0.2s ease-out;
-    }
-
-    .link--text:hover {
-        color: #fe9244;
-        border-left: 3px solid #fe9244;
-        border-right: 3px solid #fe9244;
-    }
-     */
 
     .banner,
     .social {
@@ -326,15 +265,13 @@
         margin-top: 12px;
     }
 
-    .reviews__item:first-child {
+    .reviews__item:first-child {        /* todo: сделать слайдер из отзывов */
         display: none;
     }
 
     .about__container {
         display: block;
     }
-
-
 
     .about__text {
         font-size: 12px;

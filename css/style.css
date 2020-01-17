@@ -128,7 +128,7 @@ a {
 
 .menu__item {
 	display: inline-block;
-	margin-right: 45px;
+	margin-right: 45px;				/* todo: может на флексах сделать? */
 }
 
 .menu__item:last-child {
