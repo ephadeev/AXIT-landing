@@ -471,7 +471,7 @@ a {
 	width: 32.3636%
 }
 
-.about__icon--container {         /* todo: переименовать! */
+.about__icon--container {
 	display: flex;
     height: 66px;
     width: 66px;
@@ -530,7 +530,7 @@ a {
 
 .prices__value {
 	background-color: #333;
-	font-size: 35px;
+	font-size: 94px;
 	font-family: "Raleway", sans-serif;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
@@ -539,8 +539,8 @@ a {
 	margin-bottom: 1px;
 }
 
-.prices__value--big {
-	font-size: 94px;
+.prices__value::first-letter {
+	font-size: 35px;
 }
 
 .prices__type {

@@ -11,9 +11,10 @@
         width: 720px;
     }
 
-    .top-form_title {
-        font-size: 15px;
+    .top-form {
+        width: 41%;
     }
+
 }
 
 /* 576 - 800 */
@@ -22,20 +23,37 @@
         width: 540px;
     }
 
+    .banner__container {
+        display: block;
+    }
+
     .description {
-        width: 54%;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .titles,
+    .description__title {
+        font-size: 34px;
     }
 
     .top-form {
-        width: 40%;
+        width: 100%;
+        opacity: .7;
+        transition: opacity .2s linear;
     }
 
-    .top-form_title {
-        font-size: 14px;
+    .top-form:hover {
+        opacity: 1;
+        transition: opacity .2s linear;
     }
 
     .social__container {
         display: block;
+    }
+
+    .social__links {
+        width: 100%;
     }
 
     .features__image {
@@ -48,6 +66,10 @@
 
     .reviews__item {
         width: 46%;
+    }
+
+    .footer__links {
+        max-width: 45%;
     }
 }
 
@@ -65,10 +87,6 @@
 
     .section-paddings {
         padding-top: 60px;
-    }
-
-    .titles {
-        font-size: 28px;
     }
 
     #dropdown {
@@ -177,28 +195,9 @@
         padding: 12px 0;
     }
 
-    .description {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
+    .titles,
     .description__title {
-        font-size: 28px;
-    }
-
-    .top-form {
-        width: 100%;
-        opacity: .7;
-        transition: opacity .2s linear;
-    }
-
-    .top-form:hover {
-        opacity: 1;
-        transition: opacity .2s linear;
-    }
-
-    .top-form_title {
-        font-size: 14px;
+        font-size: 27px;
     }
 
     .top-form__input {
@@ -221,10 +220,6 @@
     .prices,
     .reviews {
         padding-bottom: 12px;
-    }
-
-    .features__title {
-        font-size: 15px;
     }
 
     .features__text {
@@ -257,7 +252,7 @@
 
     #tab1:checked ~ .features__tab1,
     #tab2:checked ~ .features__tab2,
-    #tab3:checked ~ .features__tab3 {		/* ~ похож на +, отличается тем, что будет выбран не только первый элемент который следует сразу за селктором который прописан до ~, а все */
+    #tab3:checked ~ .features__tab3 {
         padding-left: 0;
     }
 
@@ -271,10 +266,6 @@
 
     .about__container {
         display: block;
-    }
-
-    .about__text {
-        font-size: 12px;
     }
 
     .about__item,
@@ -291,7 +282,6 @@
         padding-top: 12px;
     }
 
-    .social__links,
     .prices__item,
     .contacts__item {
         width: 100%;
@@ -305,10 +295,6 @@
     .about__item:last-child,
     .prices__item:last-child {
         margin-bottom: 0;
-    }
-
-    .banner__container {
-        display: block;
     }
 
     .social__text,
