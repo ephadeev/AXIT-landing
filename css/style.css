@@ -17,6 +17,7 @@ time, mark, audio, video {
     font-size: 100%;
 
     vertical-align: baseline;
+	scroll-behavior: smooth;
 }
 
 article, aside, details, figcaption, figure,
@@ -93,10 +94,6 @@ a {
 	color: rgba(255, 255, 255, 0.8);
 	margin-bottom: 33px;
 	text-align: center;
-}
-
-.scroll-smooth {
-	scroll-behavior: smooth;
 }
 
 .flex-between {
