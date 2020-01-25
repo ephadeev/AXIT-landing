@@ -309,8 +309,6 @@ a {
 }
 
 .social__links {
-	margin: 29px 0 30px;
-    height: 46px;
     width: 56.6363%
 }
 
@@ -320,6 +318,12 @@ a {
     width: 24px;
     background-image: url("../img/social__icons.png");
     background-repeat: no-repeat;
+	transition: .2s;
+}
+
+.social__link:hover {
+	transform:scale(1.15);
+	transition: .2s;
 }
 
 .social__facebook {
@@ -399,12 +403,14 @@ a {
 	padding: 16px 24px;
 	cursor: pointer;
 	box-shadow: 0 1px 1px #777;
-    transition: background-color 0.2s linear, box-shadow 0.2s linear;
+    transition: .2s;
 }
 
 .features__button--download:hover {
+	transform:scale(.97);
 	background-color: #FFA764;
 	box-shadow: none;
+	transition: .2s;
 }
 
 .features__tab1,
@@ -711,7 +717,7 @@ a {
 	color: #fff;
 	background-color: #ff9b51;
     box-shadow: 0 2px 2px #777;
-    transition: background-color 0.2s linear, box-shadow 0.2s linear;
+    transition: .2s;
 
 	font-size: 14px;
 	font-family: "OpenSans", sans-serif;
@@ -722,8 +728,10 @@ a {
 }
 
 .contacts__form--button:hover {
+	transform:scale(.97);
     background-color: #FFA764;
     box-shadow: none;
+	transition: .2s;
 }
 
 /* Footer */
