@@ -309,56 +309,18 @@ a {
     width: 56.6363%
 }
 
+.fas, .fab {
+	color: #ccc;
+	font-size: 42px;
+}
+
 .social__link {
-    display: inline-block;
-    height: 46px;
-    width: 24px;
-    background-image: url("../img/social__icons.png");
-    background-repeat: no-repeat;
 	transition: .2s;
 }
 
 .social__link:hover {
 	transform:scale(1.15);
 	transition: .2s;
-}
-
-.social__facebook {
-    width: 24px;
-}
-
-.social__twitter {
-    background-position: -87px top;
-    width: 43px;
-}
-
-.social__google {
-    background-position: -191px top;
-    width: 43px;
-}
-
-.social__pinterest {
-    background-position: -282px top;
-    width: 42px;
-}
-
-.social__instagram {
-    background-position: -384px top;
-    width: 41px;
-}
-
-.social__stumbleupon {
-    background-position: -485px top;
-    width: 51px;
-}
-
-.social__rss {
-    background-position: -596px top;
-    width: 38px;
-}
-
-.social__link:last-child {
-	padding-right: 0;
 }
 
 /* Features */
