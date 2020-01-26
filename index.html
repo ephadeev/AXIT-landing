@@ -112,13 +112,12 @@
 
 		<section class="features  section-paddings" id="features">					<!-- features -->
 			<div class="container features__container">
-				<input class="features__tabs" type="radio" name="odin" checked="checked" id="tab1" />
-				<label class="features__tabs--label  features__tab1--label" for="tab1">TAB 1</label>
-				<input class="features__tabs" type="radio" name="odin" id="tab2" />
-				<label class="features__tabs--label  features__tab2--label" for="tab2">TAB 2</label>
-				<input class="features__tabs" type="radio" name="odin" id="tab3" />
-				<label class="features__tabs--label  features__tab3--label" for="tab3">TAB 3</label>
-				<div class="features__tab1">												<!-- содержимое 1 таба -->
+				<div class="features__nav">
+					<div class="features__nav-item is-active" data-tab-name="features__tab1">TAB 1</div>
+					<div class="features__nav-item" data-tab-name="features__tab2">TAB 2</div>
+					<div class="features__nav-item" data-tab-name="features__tab3">TAB 3</div>
+				</div>
+				<div class="features__tab  is-active  features__tab1">												<!-- содержимое 1 таба -->
 					<div class="features__item">
 						<h3 class="features__title">
 							Tabs with soft transitioning effect (TAB 1)
@@ -139,7 +138,7 @@
 						<img class="features__image" src="img/features__image.png" alt="black city">
 					</div>
 				</div>
-				<div class="features__tab2">												<!-- содержимое 2 таба -->
+				<div class="features__tab  features__tab2">												<!-- содержимое 2 таба -->
 					<div class="features__item">
 						<h3 class="features__title">
 							Tabs with soft transitioning effect (TAB 2)
@@ -160,7 +159,7 @@
 						<img class="features__image" src="img/features__image.png" alt="black city">
 					</div>
 				</div>
-				<div class="features__tab3">												<!-- содержимое 3 таба -->
+				<div class="features__tab  features__tab3">												<!-- содержимое 3 таба -->
 					<div class="features__item">
 						<h3 class="features__title">
 							Tabs with soft transitioning effect (TAB 3)

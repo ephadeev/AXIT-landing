@@ -4,20 +4,20 @@ let burger = document.getElementById("burger");
 let menu = document.getElementById("menu");
 let bg = document.getElementById("bg");
 
-burger.addEventListener("click", function() {
+burger.addEventListener("click", function () {
     let isCross = this.classList.contains("cross");
 
-    if(isCross) {
+    if (isCross) {
         burger.classList.remove("cross");
         menu.classList.remove("visible");
         bg.classList.remove("visible");
-    }   else{
-            burger.classList.add("cross");
-            menu.classList.add("visible");
-            bg.classList.add("visible");
-        }
-
+    } else {
+        burger.classList.add("cross");
+        menu.classList.add("visible");
+        bg.classList.add("visible");
+    }
 });
+
 
 $('.reviews__container').slick({
     dots: false,
@@ -48,3 +48,32 @@ $('.reviews__container').slick({
         // instead of a settings object
     ]
 });
+
+
+let tab = function () {
+    let tabNav = document.querySelectorAll(".features__nav-item"),
+        tabContent = document.querySelectorAll(".features__tab"),
+        tabName;
+
+    tabNav.forEach(item => {
+        item.addEventListener("click", selectTabNav)
+    });
+
+    function selectTabNav() {
+        tabNav.forEach(item => {
+            item.classList.remove("is-active");
+        });
+        this.classList.add("is-active");
+        tabName = this.getAttribute("data-tab-name");
+        selectTabContent(tabName);
+    }
+
+    function selectTabContent(tabName) {
+        tabContent.forEach(item => {
+            item.classList.contains(tabName) ? item.classList.add("is-active") : item.classList.remove("is-active");
+        });
+    }
+};
+
+
+tab();
