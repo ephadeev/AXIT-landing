@@ -545,7 +545,13 @@ a {
 }
 
 .reviews__container {
+	display: flex;
+}
 
+.reviews__wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
 }
 
 .reviews__item {
@@ -699,45 +705,7 @@ a {
 }
 
 .footer__link {
-	display: inline-block;
-	background-image: url("../img/sprite.png");
-	background-repeat: no-repeat;
-	height: 23px;
-	width: 27px;
-}
-
-.facebook {
-	width: 12px;
-}
-
-.twitter {
-	background-position: -43px top;
-	width: 22px;
-}
-
-.google {
-	background-position: -95px top;
-	width: 22px;
-}
-
-.pinterest {
-	background-position: -141px top;
-	width: 21px;
-}
-
-.instagram {
-	background-position: -191px top;
-	width: 22px;
-}
-
-.stumbleupon {
-	background-position: -242px top;
-	width: 27px;
-}
-
-.rss {
-	background-position: -298px top;
-	width: 19px;
+	font-size: 23px;
 }
 
 .footer__copyright {

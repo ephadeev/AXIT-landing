@@ -24,7 +24,7 @@ $('.reviews__container').slick({
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,

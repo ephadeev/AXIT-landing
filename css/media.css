@@ -356,4 +356,8 @@
     .social__text {
         font-size: 10px;
     }
+
+    .footer__link {
+        font-size: 23px;
+    }
 }
