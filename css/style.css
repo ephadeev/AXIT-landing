@@ -706,7 +706,16 @@ a {
 
 .footer__link {
 	font-size: 23px;
+	cursor: pointer;
+	transition: .2s;
 }
+
+.footer__link:hover {
+	transform:scale(1.15);
+	transition: .2s;
+}
+
+
 
 .footer__copyright {
 	font-size: 9px;
