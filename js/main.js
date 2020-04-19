@@ -1,13 +1,10 @@
 "use strict";
-
 let burger = document.getElementById("burger");
 let menu = document.getElementById("menu");
 let bg = document.getElementById("bg");
 
 burger.addEventListener("click", function () {
-    let isCross = this.classList.contains("cross");
-
-    if (isCross) {
+    if (this.classList.contains("cross")) {
         burger.classList.remove("cross");
         menu.classList.remove("visible");
         bg.classList.remove("visible");
@@ -18,6 +15,13 @@ burger.addEventListener("click", function () {
     }
 });
 
+bg.addEventListener("click", (event) => {
+    if (bg.classList.contains("visible") && event.target !== document.getElementsByClassName('header')[0]) {
+        bg.classList.remove("visible");
+        burger.classList.remove("cross");
+        menu.classList.remove("visible");
+    }
+});
 
 $('.reviews__container').slick({
     dots: false,
@@ -49,8 +53,7 @@ $('.reviews__container').slick({
     ]
 });
 
-
-let tab = function () {
+(function changeTabs() {
     let tabNav = document.querySelectorAll(".features__nav-item"),
         tabContent = document.querySelectorAll(".features__tab"),
         tabName;
@@ -73,7 +76,4 @@ let tab = function () {
             item.classList.contains(tabName) ? item.classList.add("is-active") : item.classList.remove("is-active");
         });
     }
-};
-
-
-tab();
+})();
